@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* Header */
+
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    max-height: 60px;
+}
+
+.navbar-nav {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+
+}
+
+.navbar-collapse .btn-white {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
