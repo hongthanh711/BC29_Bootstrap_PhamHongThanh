@@ -1,68 +1,716 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Imroz</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="./css/style.css">
-  
-  </head>
-  <body>
-      
-    <div class="wrapper">
+<head>
+  <title>Imroz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       <header>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-          <!-- Brand -->
-          <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" class="logo"></a>
-        
-          <!-- Toggler/collapsibe Button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="" class="logo img-fluid"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse ml-auto" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blocks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <a href="#" class="btn-white">Buy now</a>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="carousel">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./image/bg-image-22.jpg" alt=".">
+            <div class="carousel-caption">
+              <h3>UX Research.</h3>
+              <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
+                alteration.
+              </p>
+              <a href="#" class="btn-pink">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./image/bg-image-23.jpg" alt=".">
+            <div class="carousel-caption">
+              <h3>Marketing</h3>
+              <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered
+                alteration.
+              </p>
+              <a href="#" class="btn-pink">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./image/bg-image-24.jpg" alt=".">
+            <div class="carousel-caption">
+              <h3>Development</h3>
+              <p>There are many variations of passages of
+                Lorem Ipsum available but the majority have suffered alteration.
+              </p>
+              <a href="#" class="btn-pink">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./image/bg-image-20.jpg" alt=".">
+            <div class="carousel-caption">
+              <h3>UX Research.</h3>
+              <p>There are many variations of passages of
+                Lorem Ipsum available but the majority have suffered alteration.
+              </p>
+              <a href="#" class="btn-pink">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev btn" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon btn-white"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon btn-white"></span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="service container">
+      <div class="service__title text-center ">
+        <p class="sub-title">
+          What we can do for you
+        </p>
+        <h2 class="title">
+          Our Awesome Service
+        </h2>
+        <p class="description">
+          There are many variations of passages of Lorem Ipsum available,
+          <br>
+          but the majority have suffered alteration.
+        </p>
+      </div>
+
+      <div class="service__list row">
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-cast">
+                  <path
+                    d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6">
+                  </path>
+                  <line x1="2" y1="20" x2="2.01" y2="20"></line>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-layers">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-monitor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="service__item col-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="feather feather-monitor">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h4 class="card-title">Business Stratagy</h4>
+              <p class="card-text">I throw myself down among the tall grass by the stream as I lie close to the earth.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="project">
+      <div class="container">
+        <div class="project__title text-center">
+          <p class="sub-title">
+            Our complete project
+          </p>
+          <h2 class="title">
+            Our Project
+          </h2>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration.
+          </p>
+        </div>
+
+        <div class="project__list row">
+
+          <div class="project__item col-4">
+
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-4.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center ">
+                <p>Development</p>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="project__item col-4">
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-5.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center">
+                <p>Product Design</p>
+                <h3>App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__item col-4">
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-6.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center">
+                <p>Application</p>
+                <h3>Photoshop Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__item col-4">
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-7.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center">
+                <p>Web Design</p>
+                <h3>Website Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__item col-4">
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-8.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center">
+                <p>Application</p>
+                <h3>Web Application</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__item col-4">
+            <div class="item">
+              <a href="#"><img src="./image/portfolio-9.jpg" alt="" class="rounded img-fluid"></a>
+              <div class="item-content text-center">
+                <p>Photoshop</p>
+                <h3>Photo Editing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center"><a href="" class="btn-pink">View Project</a></div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container row">
+        <div class="col-5">
+          <img src="./image/about-3.jpg" alt="" class="rounded img-fluid">
+        </div>
+
+        <div class="col-7">
+          <div class="about__title">
+            <p class="sub-title">
+              Our company about
+            </p>
+            <h3 class="title">
+              About
+            </h3>
+            <p class="description">
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in
+              some form, by injected humour, or randomised words which dont look even slightly believable. If you are
+              going to use a passage of Lorem Ipsum,
+            </p>
+          </div>
+
+          <div class="about__content">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs align-items-center">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link active" data-toggle="tab" href="#home">Our History</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link" data-toggle="tab" href="#menu1">Our Mission</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" data-toggle="tab" href="#menu2">Our Vision</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blocks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" data-toggle="tab" href="#menu3">Support</a>
               </li>
             </ul>
 
-            <a href="#" class="btn-white">Buy now</a>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane container active" id="home">
+                <h4>Lorem ipsum dolor sit.</h4>
+                <ul>
+                  <li class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-check">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>The Philosophy Of business analytics</span>
+                  </li>
+                  <li class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-check">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Fast-Track Your business</span>
+                  </li>
+                  <li class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-check">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Lies And Damn Lies About business</span>
+                  </li>
+                  <li class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-check">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>The Ultimate Deal On business</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tab-pane container fade" id="menu1">
+                <p>
+                  Fatima ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum
+                  esse.
+                  Deserunt architecto officiis laudantium corporis voluptatem.
+                </p>
+
+                <p>
+                  Jannin ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim, vero nobis
+                  quam
+                  beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto officiis laudantium
+                  corporis voluptatem.
+                </p>
+
+              </div>
+
+              <div class="tab-pane container fade" id="menu2">
+
+                <p>
+                  Fatima ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum
+                  esse.
+                  Deserunt architecto officiis laudantium corporis voluptatem.
+                </p>
+
+                <p>
+                  Jannin ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim, vero nobis
+                  quam
+                  beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto officiis laudantium
+                  corporis voluptatem.
+                </p>
+
+              </div>
+
+              <div class="tab-pane container fade" id="menu3">
+
+                <p>
+                  Fatima ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque ab aliquid, atque enim, vero nobis quam beatae nesciunt aliquam molestias, optio hic laborum
+                  esse.
+                  Deserunt architecto officiis laudantium corporis voluptatem.
+                  </>
+
+                <p>
+                  Jannin ipsum dolor sit amet consectetur adipisicing elit. Neque ab aliquid, atque enim, vero nobis
+                  quam
+                  beatae nesciunt aliquam molestias, optio hic laborum esse. Deserunt architecto officiis laudantium
+                  corporis voluptatem.
+                </p>
+
+              </div>
+
+            </div>
           </div>
-        </nav>
-       </header>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <section class="news">
+      <div class="container">
+        <div class="news__title text-center">
+          <p class="sub-title">
+            Latest post
+          </p>
+          <h2 class="title">
+            Latest News
+          </h2>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration.
+          </p>
+        </div>
+
+        <div class="news__list row">
+          <div class="news__item col-4">
+            <div class="card">
+              <img src="./image/blog-01.jpg" alt="" class="img-fluid">
+              <div class="item-content text-white">
+                <p class="text-white">
+                  App Development
+                </p>
+                <h4>
+                  What is the Difference between Web and Brand.
+                </h4>
+                <a href="" class="news-btn btn-white">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__item col-4">
+            <div class="card">
+              <img src="./image/blog-02.jpg" alt="" class="img-fluid">
+              <div class="item-content text-white">
+                <p class="text-white">
+                  React App
+                </p>
+                <h4>
+                  What is the Difference between Web and Brand.
+                </h4>
+                <a href="" class="news-btn btn-white">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="news__item col-4">
+            <div class="card">
+              <img src="./image/blog-03.jpg" alt="" class="img-fluid">
+              <div class="item-content text-white">
+                <p class="text-white">
+                  App Development
+                </p>
+                <h4>
+                  What is the Difference between Web and Brand.
+                </h4>
+                <a href="" class="news-btn btn-white">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="client">
+      <div class="container">
+        <div class="client__title text-center">
+          <p class="sub-title">
+            Our Clients
+          </p>
+          <h2 class="title">
+            Our Clients
+          </h2>
+          <p class="description">
+            There are many variations of passages of Lorem Ipsum available,
+            but the majority have suffered alteration.
+          </p>
+        </div>
+
+        <div class="client__list row text-center d-flex align-items-center">
+          <div class="client__item col-4">
+            <img src="./image/brand-01.png" alt="">
+          </div>
+          <div class="client__item col-4">
+            <img src="./image/brand-02.png" alt="">
+          </div>
+          <div class="client__item col-4">
+            <img src="./image/brand-03.png" alt="">
+          </div>
+          <div class="client__item col-4">
+            <img src="./image/brand-04.png" alt="">
+          </div>
+          <div class="client__item col-4">
+            <img src="./image/brand-05.png" alt="">
+          </div>
+          <div class="client__item col-4">
+            <img src="./image/brand-06.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer__top py-5 d-flex justify-content-between align-items-center">
+          <p class="font-weight-bolder text-white ">
+            Enough Talk, Let's Build Something Together
+          </p>
+          <a href="#" class="btn-white">Read out now</a>
+        </div>
+
+        <div class="footer__bottom row py-5">
+          <div class="copy-right col-5 d-flex flex-column justify-content-between">
+            <img src="./image/logo-light.png" alt="">
+            <p>Copyright © 2022 Imroz React Template. Built with love in Bangladesh All rights reserved.</p>
+          </div>
+
+          <div class="col-7 row">
+            <div class="quick-link col-4">
+              <h4 class="text-white">
+                Quick Link
+              </h4>
+              <ul>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Our Blog</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="company col-4">
+              <h4 class="text-white">
+                Company
+              </h4>
+              <ul>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Our Blog</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="say-hello col-4">
+              <h4 class="text-white">Say Hello</h4>
+              <div class="say-hello__content">
+                <div class="say-hello__text">
+                  <ul>
+                    <li>
+                      <span>Email: </span>
+                      <span class="mail">admin@example.com</span>
+                    </li>
+                    <li>
+                      <span>Email: </span>
+                      <span>hr@example.com</span>
+                    </li>
+                    <li>
+                      <span>Phone: </span>
+                      <span>01957485123</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="say-hello__icon d-flex justify-content-start">
+                  <div class="icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </div>
+                  <div class="icon">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <div class="icon">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <div class="icon">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
