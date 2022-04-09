@@ -162,6 +162,23 @@ header {
     color: white;
 }
 
+.carousel-control-prev .btn-white,
+.carousel-control-next .btn-white {
+    padding: 35px;
+    border-radius: 50%;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url(./../image/slick-arrow-left-small.png);
+    background-size: 50%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(./../image/slick-arrow-right-small.png);
+    background-size: 50%;
+}
+
 .carousel-indicators li {
     height: 8px;
     width: 8px;
